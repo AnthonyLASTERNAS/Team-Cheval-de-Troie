@@ -21,7 +21,8 @@ function ReservationForm(props) {
       email: email,
       dateReservation: dateReservation
     };
-    props.handleReservation(reservation);
+    
+    props.handleReservations(reservation);
     handleClose();
   };
 
