@@ -1,8 +1,8 @@
-
-import Home from './pages/Home'
-import './App.css'
-import { Route, Routes } from 'react-router-dom'
-import ReservationForm from './ReservationForm';
+import Home from "./pages/Home"
+import { Routes, Route  } from "react-router-dom"
+import { useState } from "react";
+import ReservationForm from "./components/Reservations";
+import "./App.css"
 
 function App() {
   const [reservations, setReservations] = useState([]);
