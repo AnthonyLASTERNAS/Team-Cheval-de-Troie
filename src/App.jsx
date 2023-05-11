@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import { ReactPropTypes } from "react";
+//import { Link } from "react-router-dom";
+//import { ReactPropTypes } from "react";
 import "./App.css";
 import fond from './assets/fond.jpg';
 import logo from './assets/logo.png';
