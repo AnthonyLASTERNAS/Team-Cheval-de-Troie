@@ -3,14 +3,18 @@
 import "./App.css";
 import fond from './assets/fond.jpg';
 import logo from './assets/logo.png';
+import './components/logo.css';
 
 function App() {
   const style = {
     backgroundImage: `url(${fond})`,
     height: '100vh',
+    width: '250vh',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   };
+
+
   return (
     <div className="App" style={style}>
       <header className="App-header">
@@ -22,7 +26,7 @@ function App() {
         <div>
           <span></span>
         </div>
-        <h2>DECOUVRE OU TU PARS EN VACANCES (forcés)*</h2>
+        <h3>DECOUVRE OU TU PARS EN VACANCES (forcés)*</h3>
         <div></div>
         <h5>*Offert généreusement par les formateurs</h5>
       </>
