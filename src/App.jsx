@@ -1,12 +1,15 @@
-import "./App.css";
 import fond from "./assets/fond.jpg";
 import logo from "./assets/logo.png";
-import TimeWea from "./pages/TimeWea";
+import Affichage from "./pages/Affichage";
+import Formulaire from "./pages/Formulaire";
+// import Weather from "./components/WeatherService.jsx";
 import "./components/logo.css";
 import "./pages/App.scss";
+import "./App.css";
 import "./components/WeatherService.jsx";
 import { useState } from "react";
 import cancun from "./assets/pays/mexique/cancun.jpg";
+
 
 function App() {
   const [destination, setDestination] = useState(false);
@@ -28,6 +31,11 @@ function App() {
         <p>tour opérateur</p>
         <h2>Incite toi à prendre des vacances</h2>
 
+        {/**
+         * Anthony:
+         *  click this styled checkbox
+         * Dans le label c'est étrange
+         */}
         <input type="checkbox" id="chk" />
         <label htmlFor="chk" click this styled checkbox />
         <input type="text" placeholder="Australie" />
@@ -74,10 +82,9 @@ function App() {
           </button>
         </div>
         <div>
-          <button className="form" type="button">
-            A toi de jouer!
-          </button>
+          <Formulaire />
         </div>
+        <Affichage />
         <h5>*Offert généreusement par les formateurs</h5>
       </>
     </div>
