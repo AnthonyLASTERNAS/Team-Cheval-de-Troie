@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from '@material-ui/core';
 
 function ReservationForm(props) {
@@ -22,6 +22,7 @@ function ReservationForm(props) {
       dateReservation: dateReservation
     };
     
+    // eslint-disable-next-line react/prop-types
     props.handleReservations(reservation);
     handleClose();
   };
