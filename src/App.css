@@ -1,1 +1,30 @@
 
+#root {
+  display:flex;
+  text-align: center;
+  
+}
+
+body {
+  overflow: hidden;
+ background-position: center;
+ background-color: rgb(85, 211, 243);
+
+}
+
+
+h1 {
+  color:rgb(219, 58, 17);
+  margin-top: -70px;
+}
+
+h3 {
+margin-top:50px;
+}
+
+h5 {
+  margin-top: 550px;
+  display: flex;
+}
+
+
