@@ -29,7 +29,7 @@ function ReservationForm(props) {
       dateReservation: dateReservation,
     };
 
-    // eslint-disable-next-line react/prop-types
+    
     props.handleReservations(reservation);
     handleClose();
   };
