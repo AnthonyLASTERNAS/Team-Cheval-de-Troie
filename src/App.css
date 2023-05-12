@@ -108,9 +108,31 @@ button.form {
 }
 
  .container {
-  height:5vh;
+  height:30vw;
+  width: 30vw;
   position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%);
+
+ }
+
+ .container span {
+  margin: 0;
+  padding: 0;
+  height:30vw;
+  width: 30vw;
+  display:flex;
+justify-content: center;
+align-items: center;
+ }
+
+ .container span img{
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  width: 100%;
+  height: auto;
+  max-width: initial;
+  margin: 0;
+  padding: 0;
  }
