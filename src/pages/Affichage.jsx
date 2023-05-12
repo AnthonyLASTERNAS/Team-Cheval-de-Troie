@@ -12,11 +12,11 @@ function App() {
 
   return (
     <div>
-      <input type="text" value={city} onChange={(e) => setCity(e.target.value)} />
-      <button onClick={handleButtonClick}>Afficher la météo</button>
       {weatherData && (
         <div>
-          <h2>{weatherData.name}, {weatherData.country}</h2>
+          <h2>
+            {weatherData.name}, {weatherData.country}
+          </h2>
           <img src={weatherData.iconURL} alt="icon" />
           <p>{weatherData.description}</p>
           <p>Température : {weatherData.temp}°C</p>

@@ -6,6 +6,7 @@ import "./components/logo.css";
 import "./pages/App.scss";
 import "./components/WeatherService.jsx";
 import { useState } from "react";
+import cancun from "./assets/pays/mexique/cancun.jpg";
 
 function App() {
   const [destination, setDestination] = useState(false);
@@ -54,7 +55,13 @@ function App() {
         <input type="checkbox" id="chk" />
         <label htmlFor="chk" click this styled checkbox />
         <input type="text" placeholder="Turquie" />
-        <div className="container">{destination && <span>toto</span>}</div>
+        <div className="container">
+          {destination && (
+            <span>
+              <img src={cancun} alt="" />
+            </span>
+          )}
+        </div>
         <h3>DECOUVRE OU TU PARS EN VACANCES (forcées)*</h3>
 
         <div>
