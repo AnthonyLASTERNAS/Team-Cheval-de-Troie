@@ -1,8 +1,7 @@
 //import Home from "./pages/Home";
 //import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
-import ReservationForm from "./components/Reservations";
-import "./page/Formulaire.css";
+import Reservations from "../components/Reservations";
 
 function Formulaire() {
   const [reservations, setReservations] = useState([]);
@@ -13,7 +12,8 @@ function Formulaire() {
 
   return (
     <div>
-      <ReservationForm handleReservation={handleReservation} />
+      <p>Formulaire</p>
+      <Reservations handleReservation={handleReservation} />
       <ul>
         {reservations.map((reservation, index) => (
           <li key={index}>
@@ -24,7 +24,6 @@ function Formulaire() {
       </ul>
     </div>
   );
-  <TimeWea />;
 }
 
 export default Formulaire;
