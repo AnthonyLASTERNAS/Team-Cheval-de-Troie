@@ -11,7 +11,9 @@ function App() {
 
   return (
     <div>
+
       <button onClick={handleButtonClick}>Afficher la météo</button>
+
       {weatherData && (
         <div>
           <h2>
