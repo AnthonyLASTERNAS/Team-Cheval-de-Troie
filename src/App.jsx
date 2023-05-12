@@ -31,11 +31,7 @@ function App() {
         <p>tour opérateur</p>
         <h2>Incite toi à prendre des vacances</h2>
 
-        {/**
-         * Anthony:
-         *  click this styled checkbox
-         * Dans le label c'est étrange
-         */}
+      
         <input type="checkbox" id="chk" />
         <label htmlFor="chk" click this styled checkbox />
         <input type="text" placeholder="Australie" />

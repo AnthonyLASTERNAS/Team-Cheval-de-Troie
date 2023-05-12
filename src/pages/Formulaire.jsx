@@ -1,5 +1,3 @@
-//import Home from "./pages/Home";
-//import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Reservations from "../components/Reservations";
 
