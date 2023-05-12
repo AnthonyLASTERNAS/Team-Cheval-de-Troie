@@ -1,3 +1,5 @@
+import "../components/WeatherService.css";
+
 const API_KEY = "04ab39dd84afd2d14208614a9dedb94a";
 
 const makeIconURL = (iconId) =>

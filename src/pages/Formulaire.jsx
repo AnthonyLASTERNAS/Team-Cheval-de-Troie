@@ -24,6 +24,7 @@ function Formulaire() {
       </ul>
     </div>
   );
+  <TimeWea />;
 }
 
 export default Formulaire;
