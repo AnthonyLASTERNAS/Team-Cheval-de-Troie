@@ -5,8 +5,10 @@ import TimeWea from "./pages/TimeWea";
 import "./components/logo.css";
 import "./pages/App.scss";
 import "./components/WeatherService.jsx";
+import { useState } from "react";
 
 function App() {
+  const [destination, setDestination] = useState(false);
   const style = {
     backgroundImage: `url(${fond})`,
     height: "100vh",
@@ -52,13 +54,15 @@ function App() {
         <input type="checkbox" id="chk" />
         <label htmlFor="chk" click this styled checkbox />
         <input type="text" placeholder="Turquie" />
-        <div>
-          <span></span>
-        </div>
-        <h3>DECOUVRE OU TU PARS EN VACANCES (forcés)*</h3>
+        <div className="container">{destination && <span>toto</span>}</div>
+        <h3>DECOUVRE OU TU PARS EN VACANCES (forcées)*</h3>
 
         <div>
-          <button className="glow-on-hover" type="button">
+          <button
+            className="glow-on-hover"
+            type="button"
+            onClick={() => setDestination(!destination)}
+          >
             A toi de jouer!
           </button>
         </div>
