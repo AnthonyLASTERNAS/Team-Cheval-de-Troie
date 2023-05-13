@@ -1,11 +1,18 @@
-import { useState } from 'react';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from '@material-ui/core';
+import { useState } from "react";
+import {
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  TextField,
+} from "@material-ui/core";
 
 function ReservationForm(props) {
   const [open, setOpen] = useState(false);
-  const [nom, setNom] = useState('');
-  const [email, setEmail] = useState('');
-  const [dateReservation, setDateReservation] = useState('');
+  const [nom, setNom] = useState("");
+  const [email, setEmail] = useState("");
+  const [dateReservation, setDateReservation] = useState("");
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -19,10 +26,10 @@ function ReservationForm(props) {
     const reservation = {
       nom: nom,
       email: email,
-      dateReservation: dateReservation
+      dateReservation: dateReservation,
     };
+
     
-    // eslint-disable-next-line react/prop-types
     props.handleReservations(reservation);
     handleClose();
   };
@@ -33,7 +40,7 @@ function ReservationForm(props) {
         Réserver
       </Button>
       <Dialog open={open} onClose={handleClose}>
-        <DialogTitle>Réserver une table</DialogTitle>
+        <DialogTitle>Réserver un vol</DialogTitle>
         <DialogContent>
           <TextField
             autoFocus

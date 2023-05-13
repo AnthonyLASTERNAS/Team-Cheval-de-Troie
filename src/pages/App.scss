@@ -5,11 +5,12 @@ input[type="checkbox"]{
 input[type="text" i]{
     border: none;
     background: none;
-    font-family: alien encounters;
-    
+    font-family: alien encounters;  
 }
 
 input::placeholder {
-    color: #6e1ee7;
-
+    color: #37a84d;
+    background-color:rgb(36, 19, 13);
+    margin-right: 50%;
+    text-align:center; 
 }
