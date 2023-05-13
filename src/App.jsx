@@ -11,6 +11,7 @@ import { useState } from "react";
 import cancun from "./assets/pays/mexique/cancun.jpg";
 
 
+
 function App() {
   const [destination, setDestination] = useState(false);
   const style = {
@@ -28,6 +29,7 @@ function App() {
       </header>
       <>
         <h1>Cheval de Troie</h1>
+
         <p>tour opérateur</p>
         <h2>Incite toi à prendre des vacances</h2>
 
@@ -79,6 +81,40 @@ function App() {
         </div>
         <div>
           <Formulaire />
+              
+        <h2>Incite toi à prendre des vacances</h2>
+
+        <input type="checkbox" id="chk"/>
+<label for="chk" click this styled checkbox/>
+<input type= "text" placeholder="Australie"/>
+
+<input type="checkbox" id="chk"/>
+<label for="chk" click this styled checkbox/>
+<input type= "text" placeholder="Chine"/>
+
+<input type="checkbox" id="chk"/>
+<label for="chk" click this styled checkbox/>
+<input type= "text" placeholder="Costa rica"/>
+
+<input type="checkbox" id="chk"/>
+<label for="chk" click this styled checkbox/>
+<input type= "text" placeholder="France"/>
+
+<input type="checkbox" id="chk"/>
+<label for="chk" click this styled checkbox/>
+<input type= "text" placeholder="Mexique"/>
+
+<input type="checkbox" id="chk"/>
+<label for="chk" click this styled checkbox/>
+<input type= "text" placeholder="Suisse"/>
+
+<input type="checkbox" id="chk"/>
+<label for="chk" click this styled checkbox/>
+<input type= "text" placeholder="Turquie"/>
+<div>
+   <span>
+          </span>
+
         </div>
         <Affichage />
         <h5>*Offert généreusement par les formateurs</h5>
